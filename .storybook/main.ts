@@ -23,7 +23,7 @@ const config: StorybookConfig = {
         ...(config.resolve ?? {}),
         alias: {
           ...(config.resolve?.alias ?? {}),
-          "@": join(process.cwd(), "src"),
+          "@": join(process.cwd(), "."),
         },
       },
     };
