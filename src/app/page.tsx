@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen uppercase">
-      <h1 className="text-8xl font-bold text-cyan-500">Bakery</h1>
-      <p className="text-2xl">Cooming Soon</p>
+    <div className="w-screen h-screen flex flex-col items-center justify-center">
+      <h1 className="text-5xl md:text-9xl font-bold text-blue">Bakery</h1>
+      <p className="text-1xl md:text-2xl text-pink">Cooming Soon...</p>
     </div>
   );
 }

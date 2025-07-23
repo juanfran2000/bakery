@@ -1,25 +1,10 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--plus-jakarta-sans);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme {
+  --font-apfel-grotezk: var(--apfel-grotezk);
+  --color-pink: #ffa7ee;
+  --color-beige: #f8f8f2;
+  --color-blue: #147c98;
+  --color-dark: #112229;
 }

@@ -1,10 +1,22 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const plusJakartaSans = Plus_Jakarta_Sans({
-  variable: "--plus-jakarta-sans",
-  subsets: ["latin"],
+const apfelGrotezk = localFont({
+  src: [
+    {
+      path: "./fonts/apfel-grotezk-latin-400-normal.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/apfel-grotezk-latin-700-normal.woff2",
+      weight: "700",
+      style: "bold",
+    },
+  ],
+  variable: "--apfel-grotezk",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -19,8 +31,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${plusJakartaSans.variable} antialiased`}>
-        {children}
+      <body className={`${apfelGrotezk.className} antialiased`}>
+        <main>{children}</main>
       </body>
     </html>
   );
