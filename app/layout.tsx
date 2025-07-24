@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Footer from "../components/ui/footer";
 
 const apfelGrotezk = localFont({
   src: [
@@ -33,6 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${apfelGrotezk.className} antialiased`}>
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
